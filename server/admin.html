@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-adminUA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/using.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/font/fontawesome-free-6.1.2-web/css/all.css">
+    <title>SS-Admin</title>
+</head>
+
+<body>
+
+
+    <div class="admin">
+        <div class="modal-login">
+            <div class="time">
+                <h1 class="login-heading">SS Phone</h1>
+                <h3 class="time-title">Chào Mừng Bạn Đến Với Trang Đăng Nhập Dành Cho Người Quản Lý</h3>
+                <div class="time-out">
+                    <h2>03 : 39 : 30 </h2>
+                </div>
+            </div>
+            <div class="login">
+
+                <form class="login-body" action="">
+                    <div class="">
+                        <label for=""></label>
+                        <input class="input account" type="text" placeholder="Tài Khoản">
+
+                    </div>
+                    <div class="">
+                        <label for=""></label>
+                        <input class="input pass" type="password" placeholder="Mật Khẩu">
+                    </div>
+                </form>
+                <button onclick="loginAdminAccount();" class="btn logIn-btn">Đăng Nhập</button>
+                <div>
+                    <a class="forget-pass" href="#">Quên Mật Khẩu</a>
+                </div>
+
+                <div class="login-socialNetwork">
+                    <a href="#" class="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Đăng Nhập Facebook</p>
+                    </a>
+                    <a href="#" class="facebook">
+                        <i class="fa-brands fa-google"></i>
+                        <p>Đăng Nhập Google</p>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast">
+    </div>
+
+
+    <div class="user-admin">
+        <div class="list-infomation">
+            <div class="information-admin">
+                <div class="info-user">
+                    <div class="img-user" style="background-image: url(./style/img/facebook.jpg)">
+                        <div class="user-camera" onclick="camera()" >
+                        <i class="fa-solid fa-camera"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="user-name">
+                    <h1>Nguyễn Khánh Sơn</h1>
+                    <h3>nguyenkhanhsonzero@gmail.com</h3>
+                </div>
+
+
+            </div>
+            <div class="list-product">
+                
+            </div>
+        </div>
+
+        <div class="information-product">
+
+        </div>
+    </div>
+
+
+    <script src="./admin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-white: #fff;
+    --background-black: #000;
+    --background-gray: #ccc;
+    --background: linear-gradient(90deg, #490e80, #e39be0);
+    --color-white:#fff;
+    --color-black:#000;
+    
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+   
+}
+body{
+     width: 100vw;
+    height: 100vh;
+}
+.btn{
+    border: none;
+    cursor: pointer;
+
+}

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS-CellPhone</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/font/fontawesome-free-6.1.2-web/css/all.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="header">
+            <div class="header__container grid wide">
+                <div class="header__menu">
+                    <div class="mobile-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul class="menu-list">
+                        <li class="menu-list__item menu-list__item--view"><a class="menu-list__item-link"
+                                href="./index.html">Trang Chủ</a></li>
+                        <li class="menu-list__item menu-list__cellphone">
+                            Điện Thoại
+                            <i class=" fa-sharp fa-solid fa-caret-down"></i>
+                            <i class=" fa-sharp fa-solid fa-caret-right"></i>
+
+                            <ul class="menu__child">
+                                <li class="menu__child-item"><a class="menu__child-item__link"
+                                        href="./product.html">iPhone</a></li>
+                                <li class="menu__child-item"><a class="menu__child-item__link" href="#">Samsung</a></li>
+                                <li class="menu__child-item"><a class="menu__child-item__link" href="#">OPPO</a></li>
+                                <li class="menu__child-item"><a class="menu__child-item__link" href="#">OnePlus</a></li>
+                                <li class="menu__child-item"><a class="menu__child-item__link" href="#">Xiomi</a></li>
+                                <li class="menu__child-item"><a class="menu__child-item__link" href="#">Nokia</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-list__item"><a class="menu-list__item-link" href="./Service.html">Dịch Vụ</a>
+                        </li>
+
+                        <div class="close_menu_left">
+
+                        </div>
+                    </ul>
+                </div>
+                <div class="header__heading">
+                    <a href="./index.html" class="heading-logo">
+                        <h1 class="logo-title">SS<span class="logo-nav">phone</span></h1>
+                    </a>
+                </div>
+                <div class="header__logIn">
+                    <form class="header__search">
+                        <input type="text" placeholder="Search" class="search">
+                        <button class="search__btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <div class="login">
+                        <div class="login--box">
+                            <div class="avatar__login">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <ul class="list-login">
+                                <li class="login-item js_lognIn">Đăng Nhập</li>
+                                <li class="login-item js_lognUp">Đăng Ký</li>
+                                <li class="login-item">Trợ Giúp</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="content">
+            <div class="content__background">
+                <img id="img" class="background-img" onclick="onChange()" src="./css/img/ip-14-5.webp" alt="">
+            </div>
+            <div class="grid wide">
+
+                <div class="scrol row">
+                    <div class="scrol-item col l-2-4 m-2-4 c-2-4 ">iPhone</div>
+                    <div class="scrol-item col l-2-4 m-2-4 c-2-4 ">SamSung</div>
+                    <div class="scrol-item col l-2-4 m-2-4 c-2-4 ">Oppo</div>
+                    <div class="scrol-item col l-2-4 m-2-4 c-2-4 ">OnePlus</div>
+                    <div class="scrol-item col l-2-4 m-2-4 c-2-4 ">Xiomi</div>
+                    <div class="active"></div>
+                </div>
+
+                <div class="page">
+                    <div class="video active-page">
+                        <video width="100%" height="100%" autoplay loop muted>
+                            <source src="css/video/videoApple.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video">
+                        <video width="100%" height="100%" autoplay loop muted>
+                            <source src="css/video//videoSamsung.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="video">
+                        <video width="100%" height="100%" autoplay loop muted>
+                            <source src="css/video/videoOppo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="video">
+                        <video width="100%" height="100%" autoplay loop muted>
+                            <source src="css/video/videoOneplus.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="video">
+                        <video width="100%" height="100%" autoplay loop muted>
+                            <source src="css/video/videosamsungfix.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="grid wide position-btn">
+                <h1 class="title-heading">iPhone</h1>
+                <div class="scroll-box">
+                    <div class="list-produc">
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-click-btn">
+                    <button class="btn-left js-left-iphone">
+                        <i class="fa-solid fa-angles-left"></i>
+                    </button>
+                    <button class="btn-right js-right-iphone btn-active">
+                        <i class="fa-solid fa-angles-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid wide position-btn">
+                <h1 class="title-heading">iPhone</h1>
+                <div class="scroll-box">
+                    <div class="list-produc">
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-discount">23%</div>
+                            <a href="#" class="product-link">
+                                <img src="./css/img/iphone_11.png" alt="" class="product-img">
+                                <div>
+                                    <h2 class="product-heading">iPhone 11 64GB | Chính hãng VN/A</h2>
+
+                                    <div class="product-price">
+                                        <p class="price-new">11.490.000đ</p>
+                                        <p class="price-old">14.990.000đ</p>
+                                    </div>
+                                </div>
+
+                                <div class="product-describe">
+
+                                    <p class="decribe-text">[HOT] Thu cũ lên đời giá cao - thủ tục nhanh - Trợ giá lên
+                                        tới 1.000.000 </p>
+                                </div>
+                            </a>
+                            <div class="star yellow">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <p class="count-buy">đã bán 200</p>
+                            </div>
+                            <div class="product-heart">
+                                <div class="heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p class="text-heart">Yêu Thích</p>
+                                </div>
+                                <div class="product-animation">
+                                    <div class="product-add">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <p class="add-now">Mua Ngay</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-click-btn">
+                    <button class="btn-left js-left-samsung">
+                        <i class="fa-solid fa-angles-left"></i>
+                    </button>
+                    <button class="btn-right js-right-samsung btn-active">
+                        <i class="fa-solid fa-angles-right"></i>
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <div class="footer_render">
+                <h1 class="footer-heading"></h1>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="fixed-contact">
+        <div title="alal" class="contact  messenger">
+            <i class="fa-brands fa-facebook-messenger"></i>
+        </div>
+
+        <div title="0943217670" class="contact  phone">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <div title="nguyenkhanhsonzero@gmail.com" class="contact  email">
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-lognUp">
+            <div class="modal__introduce">
+                <h1 class="modal-welcome">Welcome</h1>
+                <p class="modal-text">To keep connected with us please login with your personal info</p>
+                <button class="modal-signup js-btn-Up">Sign In</button>
+
+            </div>
+            <div class="modal__container">
+                <div class="modal-header">
+                    <h1 class="modal-header__signUp">Create Account</h1>
+                    <div class="modal-icon-login">
+                        <div class="modal-connected"><a href="#" class="modal-connected-link"><i
+                                    class="fa-brands fa-facebook"></i></a></div>
+                        <div class="modal-connected"><a href="#" class="modal-connected-link"><i
+                                    class="fa-brands fa-google-plus-g"></i></a></div>
+                        <div class="modal-connected"><a href="#" class="modal-connected-link"><i
+                                    class="fa-brands fa-square-instagram"></i></a></div>
+                    </div>
+
+                </div>
+                <div class="modal-body">
+                    <p class="modal-body__text">or use your email for registation</p>
+
+                    <form action="" class="modal-form">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+
+                        <button class="modal-signup modal-signIn ">Sign Up</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal-lognIn">
+            <div class="modal__container container-lognIn">
+                <div class="modal-header">
+                    <h1 class="modal-header__signUp modal-header__signIn">Sign in</h1>
+                    <div class="modal-icon-login">
+                        <div class="modal-connected"><a href="#" class="modal-connected-link"><i
+                                    class="fa-brands fa-facebook"></i></a></div>
+                        <div class="modal-connected"><a href="#" class="modal-connected-link"><i
+                                    class="fa-brands fa-google-plus-g"></i></a></div>
+                        <div class="modal-connected"><a href="#" class="modal-connected-link"><i
+                                    class="fa-brands fa-square-instagram"></i></a></div>
+                    </div>
+
+                </div>
+                <div class="modal-body">
+                    <p class="modal-body__text">or use your account</p>
+                    <form action="" class="modal-form">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <a href="#" class="modal-getpassword">Forgot your password?</a>
+                        <button class="modal-signup modal-signIn ">Sign In</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+
+            <div class="modal__introduce introduce-lognIn">
+                <h1 class="modal-welcome">Hello, Friend!</h1>
+                <p class="modal-text">Enter your personal details and start journey with us</p>
+                <button class="modal-signup js-btn-In">Sign Up</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/FakeAPI.js"></script>
+</body>
+
+</html>

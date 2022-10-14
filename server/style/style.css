@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+.admin::-webkit-scrollbar{
+    display: none;
+}
+.admin{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    background-image: var(--background);
+}
+.modal-login{
+    margin: 32px;
+    display: flex;
+    flex-direction: row;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 ,0.8);
+    border-radius: 15px;
+    background-image: var(--background);
+}
+.time{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    max-width: 300px;
+    width: 100%;
+    padding: 16px;
+    border-right: 1px solid #ccc;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.time-title{
+    margin: 12px 0;
+    line-height: 2;
+    font-size: 1.5rem  ;
+}
+.time-out{
+    margin: 12px 0;
+    font-size: 2.5rem;
+}
+.login{
+    background-color: transparent;
+    padding: 16px;
+    max-width: 400px;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.login-heading{
+    font-size: 3rem;
+    margin: 12px 0;
+}
+.input{
+    font-size: 1.8rem;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: none;
+}
+.logIn-btn{
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin: 12px 0;
+    margin: 12px 0;
+    font-size: 2rem;
+    background-color:aqua;
+    color: var(--color-white);
+}
+
+.forget-pass{
+    margin: 12px 0;
+    font-size: 1.8rem;
+}
+.login-socialNetwork{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+.facebook {
+   
+    font-size: 1.7rem;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+/* my toast  */
+
+#toast{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    height: 300px;
+}
+.toast{
+    display: flex;
+    min-width: 350px;
+    max-width: 400px;
+    border-left: 8px solid ;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 16px ;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 ,0.8);
+    border-radius: 5px;
+    animation: toastHidden linear 0.5s;
+}
+
+@keyframes toastHidden {
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.toast--success{
+    border-color: greenyellow;
+}
+.color--success{
+    color: greenyellow;
+}
+.toast--error{
+    border-color: red;
+}
+.color--error{
+    color: red;
+}
+.toast__title{
+    line-height: 1.5;
+}
+.toast__header{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+/* interface admin user  */
+
+.user-admin{
+    width: 100%;
+    height: 100%;
+    background-color:var(--background-black);
+    display: none;
+}
+.list-infomation{
+    position: fixed;
+    left: 0;
+    top:0;
+    bottom: 0;
+    width: 20%;
+    padding:0 24px;
+    background-color: aliceblue;
+    border-right: 2px solid red;
+}
+.information-product{
+    width: 80%;
+
+}
+
+.information-admin{
+    border-bottom: 1px solid #888;
+}
+.info-user{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 29%;
+    border-top-right-radius: 29%;
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0;
+    background: var(--background);
+}
+.img-user{
+    position: relative;
+    width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   
+}
+.user-camera{
+    position: absolute;
+    bottom: 5px;
+    right: 23px;
+    font-size: 3rem;
+}
+.user-name{
+    margin: 12px auto;
+    text-align: center;
+    line-height: 1.5;
+}
